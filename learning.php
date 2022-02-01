@@ -1,10 +1,8 @@
 <?php
-$eleve = [
-	'Prénom' => 'Marc', 
-	'Nom' => 'Doe', 
-	'Notes' => [12, 10, 14]
-];
-
-$eleve['Notes'][3] = 15;
-print_r($eleve['Notes']);
+$heure = (int)readline("Entrez une heure : ");
+if ((9 <= $heure && $heure < 12) || (14 <= $heure && $heure < 19)){
+echo "Le magasin est ouvert";
+} else {
+echo "Le magasin est fermé";
+}
 ?>
