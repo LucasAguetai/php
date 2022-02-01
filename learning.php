@@ -1,8 +1,10 @@
-<?php 
-$prenom = 'Marc';
-$nom = 'Doe';
-$note1 = 10;
-$note2 = 20;
-$moyenne = ($note1 + $note2) /2;
-echo "Bonjour $prenom $nom, vous avez eu $moyenne de moyenne";
+<?php
+$eleve = [
+	'Prénom' => 'Marc', 
+	'Nom' => 'Doe', 
+	'Notes' => [12, 10, 14]
+];
+
+$eleve['Notes'][3] = 15;
+print_r($eleve['Notes']);
 ?>
